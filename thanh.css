@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: Tahoma;
+}
+.img-fluid{
+    max-width: 100%;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+}
+/*===== HEADER =====*/
+header{
+    margin-bottom: 10px;
+}
+.header-top{
+    background-color: #272f54;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+.header-main{
+    background-color: #cb7802;
+    padding: 5px 5px 5px 30px;
+    display: flex;
+    justify-content: space-between; /*căn theo 2 đầu*/
+    align-items: center; /*căn theo trục dọc(trục y)*/
+}
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li{
+    display: inline-block;/*cho thẻ li nằm ngang*/
+}
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;/*để dùng đc margin padding*/
+}
+/*===== NEWS =====*/
+.new h2.title{
+    color: #272f54;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+.news .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
